@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
+import Footer from "./components/Footer";
 import Homepage from "./components/Homepage";
 import Navbar from "./components/Navbar";
 import SearchResults from "./components/SearchResults";
@@ -43,6 +44,7 @@ function App() {
             element={<Homepage news={news} />}
           />
         </Routes>
+        <Footer/>
       </Router>
     </>
   );
